@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=4 uid="uid://df4o6yn6uk8hi"]
 
-[ext_resource type="TileSet" uid="uid://cwqycux5h0q2u" path="res://paysage_tile_set.tres" id="1_lbg1e"]
+[ext_resource type="TileSet" uid="uid://cwqycux5h0q2u" path="res://assets/paysage_tile_set.tres" id="1_lbg1e"]
 [ext_resource type="PackedScene" uid="uid://dirydc1jhbrdb" path="res://scenes/joueur.tscn" id="2_ktk5d"]
-[ext_resource type="PackedScene" uid="uid://de82iea1y2ek7" path="res://scenes/sign.tscn" id="3_ruoco"]
+[ext_resource type="PackedScene" uid="uid://de82iea1y2ek7" path="res://scenes/panneau_message.tscn" id="3_ruoco"]
 [ext_resource type="Script" uid="uid://cnf4o5qr4x1by" path="res://scripts/controle_camera.gd" id="4_5hoti"]
 
 [node name="NiveauTest" type="Node"]
@@ -20,7 +20,7 @@ position = Vector2(544, 256)
 message = "J'aime cet exemple."
 
 [node name="Joueur" parent="." instance=ExtResource("2_ktk5d")]
-position = Vector2(480, 696)
+position = Vector2(200, 120)
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Joueur"]
