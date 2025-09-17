@@ -4,4 +4,4 @@ Projet-exemple de jeu de plateforme 2D fait en Godot. Créé pour le cours Inter
 
 ## Crédits
 
-Paquets de ressources visuels : Pixel platformer, par Kenney <https://kenney.nl/assets/pixel-platformer>.
+Paquets de ressources visuels : New Platformer pack, par Kenney <https://kenney.nl/assets/new-platformer-pack>.
