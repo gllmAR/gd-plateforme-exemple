@@ -274,13 +274,10 @@ message = "Exploration!"
 [node name="group-audio-positionnel" type="Node2D" parent="."]
 position = Vector2(808, 605)
 
-[node name="Audio-sprite2" parent="group-audio-positionnel" instance=ExtResource("14_duk5p")]
-position = Vector2(-334, -382)
-
 [node name="Audio-sprite" parent="group-audio-positionnel" instance=ExtResource("14_duk5p")]
 
-[node name="Audio-sprite3" parent="group-audio-positionnel" instance=ExtResource("14_duk5p")]
-position = Vector2(-837, -507)
+[node name="Audio-sprite2" parent="group-audio-positionnel" instance=ExtResource("14_duk5p")]
+position = Vector2(-334, -382)
 
 [node name="Joueur" parent="." instance=ExtResource("2_ktk5d")]
 position = Vector2(200, 120)
