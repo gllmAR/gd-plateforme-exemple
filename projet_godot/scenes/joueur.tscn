@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dirydc1jhbrdb"]
+[gd_scene load_steps=11 format=3 uid="uid://dirydc1jhbrdb"]
 
 [ext_resource type="Texture2D" uid="uid://b8rri5a137hlb" path="res://assets/spritesheets/spritesheet-characters-default.png" id="1_r36ky"]
 [ext_resource type="Script" uid="uid://c6f6th35eu1tn" path="res://scripts/joueur.gd" id="1_uj1k6"]
+[ext_resource type="AudioStream" uid="uid://dvyheh26hxljb" path="res://assets/audio/jump.wav" id="3_2y66e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uj1k6"]
 atlas = ExtResource("1_r36ky")
@@ -70,8 +71,14 @@ script = ExtResource("1_uj1k6")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -64)
 sprite_frames = SubResource("SpriteFrames_q5har")
-animation = &"promener"
+animation = &"repos"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -48)
 shape = SubResource("RectangleShape2D_uj1k6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_2y66e")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+position = Vector2(-1, -48)

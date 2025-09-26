@@ -6,6 +6,8 @@ const glisser_mur_mod = 0.15
 
 @export var etat_courant = Etat.REPOS
 
+@export var nombre_coeurs = 0
+
 enum Etat {
 	REPOS,
 	PROMENER,
@@ -22,6 +24,8 @@ func _physics_process(delta: float) -> void:
 			velocity += get_gravity() * delta * glisser_mur_mod
 			$AnimatedSprite2D.play("glisser_mur")
 			if Input.is_action_just_pressed("sauter"):
+				#Pour déclencer le son quand on saute depuis le mur
+				$AudioStreamPlayer2D.play()
 				velocity.y = JUMP_VELOCITY
 				velocity.x = move_toward(velocity.x, 0, sign(velocity.x) * SPEED)
 		else:
@@ -42,8 +46,11 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.flip_h = true
 	
 	# Handle jump.
+	
 	if Input.is_action_just_pressed("sauter") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		$AudioStreamPlayer2D.play()
+		
 
 	# Get the input direction and handle the movement/deceleration.
 	var direction := Input.get_axis("promener_gauche", "promener_droite")

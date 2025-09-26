@@ -18,9 +18,8 @@ config/features=PackedStringArray("4.4", "GL Compatibility")
 
 window/size/viewport_width=1024
 window/size/viewport_height=768
-window/size/resizable=false
 window/stretch/mode="viewport"
-window/stretch/scale_mode="integer"
+window/stretch/aspect="expand"
 
 [input]
 

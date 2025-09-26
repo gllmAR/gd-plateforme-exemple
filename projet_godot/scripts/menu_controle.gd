@@ -4,6 +4,7 @@ const PLAY_ICON = preload("res://assets/spritesheets/play_icon.tres")
 const PAUSE_ICON = preload("res://assets/spritesheets/pause_icon.tres")
 
 
+
 func _ready() -> void:
 	$PauseButton.icon = PAUSE_ICON
 	$PauseMenu.hide()
