@@ -71,7 +71,7 @@ script = ExtResource("1_uj1k6")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -64)
 sprite_frames = SubResource("SpriteFrames_q5har")
-animation = &"repos"
+animation = &"glisser_mur"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -48)
@@ -82,3 +82,4 @@ stream = ExtResource("3_2y66e")
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 position = Vector2(-1, -48)
+current = true
